@@ -21,11 +21,11 @@
     "title": "Real Projects, Real Results",
     "items": [
       {
-        "title": "Israeli Customs Automation",
+        "title": "Document Processing Automation",
         "icon": "📦",
-        "description": "Automated import declaration system for Israeli customs. Eliminated hours of manual document processing.",
-        "tech": "NestJS, .NET, Azure, Claude AI, Israeli Customs API",
-        "result": "5+ hours saved per import declaration"
+        "description": "Automated document processing system for government compliance. Eliminated hours of manual paperwork.",
+        "tech": "NestJS, .NET, Azure, Claude AI, API integrations",
+        "result": "5+ hours saved per submission"
       },
       {
         "title": "AI Mortgage Bot",
