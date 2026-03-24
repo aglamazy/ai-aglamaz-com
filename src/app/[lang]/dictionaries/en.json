@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "AI Automation for Small Business | Yaakov Aglamaz",
+    "description": "Custom AI solutions for small and medium businesses. Business process automation, API integrations, AI agents and chatbots."
+  },
+  "nav": {
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About",
+    "process": "Process",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "AI Automation for Small Business",
+    "subheadline": "We help small and medium businesses leap forward with the AI revolution — transforming manual processes into AI-powered ones.",
+    "cta_primary": "Let's Talk",
+    "cta_secondary": "See Projects"
+  },
+  "projects": {
+    "title": "Real Projects, Real Results",
+    "items": [
+      {
+        "title": "Israeli Customs Automation",
+        "icon": "📦",
+        "description": "Automated import declaration system for Israeli customs. Eliminated hours of manual document processing.",
+        "tech": "NestJS, .NET, Azure, Claude AI, Israeli Customs API",
+        "result": "5+ hours saved per import declaration"
+      },
+      {
+        "title": "AI Mortgage Bot",
+        "icon": "🏠",
+        "description": "WhatsApp chatbot for mortgage broker. Natural language lead qualification.",
+        "tech": "WhatsApp Business API, Claude AI, Node.js",
+        "result": "Lead response time reduced from hours to seconds"
+      },
+      {
+        "title": "Personal AI Assistant",
+        "icon": "🤖",
+        "description": "24/7 AI assistant managing workflows, deliveries, and automation for daily operations.",
+        "tech": "OpenClaw, Python, Telegram, API integrations",
+        "result": "Handles grocery orders, delivery tracking, and routine tasks autonomously"
+      }
+    ]
+  },
+  "services": {
+    "title": "What I Build",
+    "items": [
+      {
+        "icon": "🔄",
+        "title": "Business Process Automation",
+        "description": "Turn manual, repetitive tasks into automated workflows. Email → CRM, data entry, document processing."
+      },
+      {
+        "icon": "🔌",
+        "title": "API Integrations",
+        "description": "Connect your business systems: CRMs, payment providers, government APIs, third-party services."
+      },
+      {
+        "icon": "💬",
+        "title": "AI Agents & Chatbots",
+        "description": "Custom AI assistants for customer service, lead generation, or internal operations."
+      },
+      {
+        "icon": "🚀",
+        "title": "Legacy System Modernization",
+        "description": "Upgrade outdated tools with modern AI. Connect Excel sheets to real-time databases, automate Excel workflows."
+      }
+    ]
+  },
+  "about": {
+    "title": "25+ Years Building Software",
+    "text": "I'm Yaakov Aglamaz, a senior full-stack developer and architect.",
+    "text2": "I spent years leading teams and building enterprise systems. Now I focus on helping small businesses make the leap from manual processes to intelligent automation.",
+    "text3": "I don't sell hype. I build practical solutions that work.",
+    "tech": "Tech: Node.js, NestJS, .NET, Python, Azure, Claude AI, OpenClaw",
+    "languages": "Languages: Hebrew (native), English (fluent)",
+    "location": "Based in Israel 🇮🇱"
+  },
+  "process": {
+    "title": "How We Work Together",
+    "timeline": "Most projects: 2-4 weeks from start to finish.",
+    "steps": [
+      {
+        "icon": "📞",
+        "title": "Discovery Call",
+        "description": "We discuss your business, identify bottlenecks, and explore automation opportunities."
+      },
+      {
+        "icon": "🛠️",
+        "title": "Custom Solution",
+        "description": "I design and build a tailored system. No templates. Full source code included."
+      },
+      {
+        "icon": "🚀",
+        "title": "Launch & Support",
+        "description": "Deploy to production. Optional ongoing support available."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Investment",
+    "intro": "Projects typically range from $800 to $2,000 depending on scope and complexity.",
+    "tiers": [
+      { "name": "Simple automation", "range": "$800-1,200" },
+      { "name": "Custom AI agent", "range": "$1,200-1,800" },
+      { "name": "Full system integration", "range": "$1,800-2,500+" }
+    ],
+    "includes_title": "Every project includes:",
+    "includes": [
+      "Full source code & documentation",
+      "Business integration expertise",
+      "End-to-end delivery (design → deploy)",
+      "Post-launch support"
+    ]
+  },
+  "contact": {
+    "title": "Ready to Automate?",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "business": "Business type / industry",
+    "message": "Tell me about the process you want to automate",
+    "submit": "Let's Talk",
+    "success": "Message sent! I'll get back to you soon.",
+    "error": "Error sending message. Please try again."
+  },
+  "footer": {
+    "tagline": "AI Automation for Small Business",
+    "copyright": "© 2026 Yaakov Aglamaz | Built with care in Israel 🇮🇱"
+  }
+}
