@@ -1,6 +1,18 @@
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+"use client";
 
-export function Hero({ dict }: { dict: Dictionary }) {
+import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Locale } from "@/lib/i18n";
+
+export function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
+  const greeting = lang === "he" ? "שלום" : "Hi";
+
+  function openWidget(e: React.MouseEvent) {
+    e.preventDefault();
+    window.dispatchEvent(
+      new CustomEvent("aglamaz-widget-open", { detail: { message: greeting } })
+    );
+  }
+
   return (
     <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
       {/* Gradient background */}
@@ -18,6 +30,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
+            onClick={openWidget}
             className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-teal-700 text-white font-medium rounded-lg hover:bg-teal-800 transition-colors text-base"
           >
             {dict.hero.cta_primary} &rarr;

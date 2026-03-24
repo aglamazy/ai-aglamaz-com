@@ -10,13 +10,22 @@ export function Navbar({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   const otherLang = lang === "he" ? "en" : "he";
   const otherLangLabel = lang === "he" ? "EN" : "עב";
 
+  const greeting = lang === "he" ? "שלום" : "Hi";
+
+  function openWidget(e: React.MouseEvent) {
+    e.preventDefault();
+    window.dispatchEvent(
+      new CustomEvent("aglamaz-widget-open", { detail: { message: greeting } })
+    );
+  }
+
   const navItems = [
     { href: "#projects", label: dict.nav.projects },
     { href: "#services", label: dict.nav.services },
     { href: "#about", label: dict.nav.about },
     { href: "#process", label: dict.nav.process },
     { href: "#pricing", label: dict.nav.pricing },
-    { href: "#contact", label: dict.nav.contact },
+    { href: "#contact", label: dict.nav.contact, onClick: openWidget },
   ];
 
   return (
@@ -33,6 +42,7 @@ export function Navbar({ dict, lang }: { dict: Dictionary; lang: Locale }) {
               <a
                 key={item.href}
                 href={item.href}
+                onClick={item.onClick}
                 className="text-sm text-gray-600 hover:text-teal-700 transition-colors"
               >
                 {item.label}
@@ -77,7 +87,7 @@ export function Navbar({ dict, lang }: { dict: Dictionary; lang: Locale }) {
               <a
                 key={item.href}
                 href={item.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => { setIsOpen(false); item.onClick?.(e); }}
                 className="block py-2 text-sm text-gray-600 hover:text-teal-700"
               >
                 {item.label}

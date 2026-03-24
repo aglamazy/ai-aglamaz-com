@@ -6,7 +6,7 @@ import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Process } from "@/components/Process";
 import { Pricing } from "@/components/Pricing";
-import { Contact } from "@/components/Contact";
+import { ChatWidget } from "@/components/Contact";
 
 export default async function Home({
   params,
@@ -18,13 +18,13 @@ export default async function Home({
 
   return (
     <>
-      <Hero dict={dict} />
+      <Hero dict={dict} lang={lang as Locale} />
       <Projects dict={dict} />
       <Services dict={dict} />
       <About dict={dict} />
       <Process dict={dict} />
       <Pricing dict={dict} />
-      <Contact dict={dict} />
+      <ChatWidget />
     </>
   );
 }
