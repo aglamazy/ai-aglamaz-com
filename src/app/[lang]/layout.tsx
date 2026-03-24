@@ -28,7 +28,14 @@ export async function generateMetadata({
   return {
     title: dict.meta.title,
     description: dict.meta.description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        he: `${base}/he`,
+        en: `${base}/en`,
+        "x-default": `${base}/he`,
+      },
+    },
     openGraph: {
       title: dict.meta.title,
       description: dict.meta.description,

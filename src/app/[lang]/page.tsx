@@ -14,11 +14,31 @@ export default async function Home({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang as Locale);
+  const locale = lang as Locale;
+  const dict = await getDictionary(locale);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Yaakov Aglamaz AI Automation",
+    url: `https://ai.aglamaz.com/${locale}`,
+    description: dict.meta.description,
+    founder: {
+      "@type": "Person",
+      name: "Yaakov Aglamaz",
+    },
+    areaServed: locale === "he" ? "IL" : "Worldwide",
+    serviceType: "AI Automation",
+    inLanguage: locale === "he" ? "he" : "en",
+  };
 
   return (
     <>
-      <Hero dict={dict} lang={lang as Locale} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Hero dict={dict} lang={locale} />
       <Projects dict={dict} />
       <Services dict={dict} />
       <About dict={dict} />
