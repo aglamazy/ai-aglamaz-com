@@ -25,7 +25,7 @@
         "icon": "📦",
         "description": "Automated document processing system for government compliance. Eliminated hours of manual paperwork.",
         "tech": "NestJS, .NET, Azure, Claude AI, API integrations",
-        "result": "5+ hours saved per submission",
+        "result": "5+ hours saved per case",
         "link": "/use-cases/document-automation"
       },
       {
@@ -140,13 +140,13 @@
       },
       "title": "Automated Document Processing for Government Compliance",
       "subtitle": "An AI system that turns hours of manual work into minutes",
-      "industry": "Import & International Trade",
+      "industry": "Regulatory Compliance",
       "timeline": "8 weeks",
       "challenge": {
         "title": "The Challenge",
-        "text": "An import company manages dozens of shipments simultaneously. Each shipment requires processing 5-10 different documents — invoices, bills of lading, packing lists, certificates of origin, and regulatory documents. Each document is manually entered into government systems — a process that takes hours and is prone to errors.",
+        "text": "A company manages dozens of regulatory cases simultaneously. Each case requires processing 5-10 different documents — forms, approvals, financial reports, certificates, and compliance documents. Each document is manually entered into government systems — a process that takes hours and is prone to errors.",
         "painPoints": [
-          "5+ hours of manual work per shipment",
+          "5+ hours of manual work per case",
           "Data entry errors causing delays and fines",
           "Experienced staff stuck on data entry instead of professional work",
           "Unable to work outside office hours"
@@ -154,15 +154,15 @@
       },
       "solution": {
         "title": "The Solution",
-        "text": "We built a system that receives documents, automatically identifies their type, extracts relevant data using AI, and submits declarations directly to government systems.",
+        "text": "We built a system that receives documents, automatically identifies their type, extracts relevant data using AI, and submits reports directly to government systems.",
         "features": [
           {
             "title": "Automatic Document Classification",
-            "description": "The system automatically identifies the document type — invoice, bill of lading, certificate of origin — and extracts the relevant data."
+            "description": "The system automatically identifies the document type — form, approval, financial report, certificate — and extracts the relevant data."
           },
           {
             "title": "AI-Powered Data Extraction",
-            "description": "Claude AI analyzes document content, understands context, and extracts fields like quantities, weights, prices, and classification codes."
+            "description": "Claude AI analyzes document content, understands context, and extracts fields like amounts, dates, classification codes, and identifiers."
           },
           {
             "title": "Automated Government Submission",
@@ -170,7 +170,7 @@
           },
           {
             "title": "Real-Time Tracking",
-            "description": "Every shipment's status is updated automatically. Alerts for delays, deadlines, and required payments."
+            "description": "Every case status is updated automatically. Alerts for delays, deadlines, and required payments."
           }
         ]
       },
