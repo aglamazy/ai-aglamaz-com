@@ -25,21 +25,24 @@
         "icon": "📦",
         "description": "Automated document processing system for government compliance. Eliminated hours of manual paperwork.",
         "tech": "NestJS, .NET, Azure, Claude AI, API integrations",
-        "result": "5+ hours saved per submission"
+        "result": "5+ hours saved per submission",
+        "link": "/use-cases/document-automation"
       },
       {
         "title": "AI Mortgage Bot",
         "icon": "🏠",
         "description": "WhatsApp chatbot for mortgage broker. Natural language lead qualification.",
         "tech": "WhatsApp Business API, Claude AI, Node.js",
-        "result": "Lead response time reduced from hours to seconds"
+        "result": "Lead response time reduced from hours to seconds",
+        "link": "/use-cases/ai-chatbot"
       },
       {
         "title": "Personal AI Assistant",
         "icon": "🤖",
         "description": "24/7 AI assistant managing workflows, deliveries, and automation for daily operations.",
         "tech": "OpenClaw, Python, Telegram, API integrations",
-        "result": "Handles grocery orders, delivery tracking, and routine tasks autonomously"
+        "result": "Handles grocery orders, delivery tracking, and routine tasks autonomously",
+        "link": "/use-cases/ai-assistant"
       }
     ]
   },
@@ -125,6 +128,177 @@
     "success": "Message sent! I'll get back to you soon.",
     "error": "Error sending message. Please try again."
   },
+  "useCases": {
+    "backLink": "Back to Home",
+    "ctaTitle": "Want to build something similar?",
+    "ctaText": "Let's talk about how AI automation can save you time and money.",
+    "ctaButton": "Let's Talk",
+    "documentAutomation": {
+      "meta": {
+        "title": "Automated Document Processing for Government Compliance | Yaakov Aglamaz",
+        "description": "How we built an AI system that automatically processes import documents, saves hours of manual work, and integrates directly with government systems."
+      },
+      "title": "Automated Document Processing for Government Compliance",
+      "subtitle": "An AI system that turns hours of manual work into minutes",
+      "industry": "Import & International Trade",
+      "timeline": "8 weeks",
+      "challenge": {
+        "title": "The Challenge",
+        "text": "An import company manages dozens of shipments simultaneously. Each shipment requires processing 5-10 different documents — invoices, bills of lading, packing lists, certificates of origin, and regulatory documents. Each document is manually entered into government systems — a process that takes hours and is prone to errors.",
+        "painPoints": [
+          "5+ hours of manual work per shipment",
+          "Data entry errors causing delays and fines",
+          "Experienced staff stuck on data entry instead of professional work",
+          "Unable to work outside office hours"
+        ]
+      },
+      "solution": {
+        "title": "The Solution",
+        "text": "We built a system that receives documents, automatically identifies their type, extracts relevant data using AI, and submits declarations directly to government systems.",
+        "features": [
+          {
+            "title": "Automatic Document Classification",
+            "description": "The system automatically identifies the document type — invoice, bill of lading, certificate of origin — and extracts the relevant data."
+          },
+          {
+            "title": "AI-Powered Data Extraction",
+            "description": "Claude AI analyzes document content, understands context, and extracts fields like quantities, weights, prices, and classification codes."
+          },
+          {
+            "title": "Automated Government Submission",
+            "description": "The system generates submission files in the required format and submits directly — no manual data entry needed."
+          },
+          {
+            "title": "Real-Time Tracking",
+            "description": "Every shipment's status is updated automatically. Alerts for delays, deadlines, and required payments."
+          }
+        ]
+      },
+      "results": {
+        "title": "The Results",
+        "metrics": [
+          { "value": "80%", "label": "Reduction in declaration prep time" },
+          { "value": "24/7", "label": "Availability — no office hours dependency" },
+          { "value": "Dozens", "label": "Concurrent shipments handled" },
+          { "value": "Zero", "label": "Manual data entry errors" }
+        ]
+      },
+      "tech": {
+        "title": "Tech Stack",
+        "items": ["NestJS", "React", "PostgreSQL", "Azure Document Intelligence", "Claude AI", ".NET Bridge", "REST APIs"]
+      }
+    }
+  },
+  "useCaseAiAssistant": {
+      "meta": {
+        "title": "Personal AI Assistant for Business Operations | Yaakov Aglamaz",
+        "description": "How we built an AI agent that runs 24/7, monitors systems, executes automated tasks, and maintains business applications autonomously."
+      },
+      "title": "Personal AI Assistant for Business Operations",
+      "subtitle": "An AI agent that runs in the background, monitoring, maintaining, and operating business systems autonomously",
+      "industry": "Business Operations",
+      "timeline": "Ongoing development",
+      "challenge": {
+        "title": "The Challenge",
+        "text": "A small business owner manages dozens of processes in parallel — lead tracking, website monitoring, code maintenance, backups, orders and deliveries. Each process requires manual attention, and things fall through the cracks as the day fills up.",
+        "painPoints": [
+          "Dozens of routine tasks that get forgotten or delayed",
+          "Manual monitoring of websites and systems — only reacting after something breaks",
+          "Code maintenance and SEO deferred because there's no time",
+          "No complete picture of what's happening across all projects"
+        ]
+      },
+      "solution": {
+        "title": "The Solution",
+        "text": "We built an AI agent that runs on a dedicated server 24/7. The agent monitors, diagnoses, and fixes issues autonomously — an automated pipeline from problem detection to fix and deployment.",
+        "features": [
+          {
+            "title": "Automated Monitoring & Diagnostics",
+            "description": "The agent scans systems, checks website health, SEO status and Google indexing — and reports structured findings."
+          },
+          {
+            "title": "Automated Code Fixes",
+            "description": "When issues are detected, a separate maintenance agent reads the diagnosis, fixes the code, builds, tests and pushes to production — without intervention."
+          },
+          {
+            "title": "Scouting & Alerts",
+            "description": "Daily scanning of platforms to find business opportunities, with a structured digest sent directly to Telegram."
+          },
+          {
+            "title": "Task Management & Scheduling",
+            "description": "Automated scheduling of backups, reports, monitoring and maintenance — everything runs without waiting for someone to remember."
+          }
+        ]
+      },
+      "results": {
+        "title": "The Results",
+        "metrics": [
+          { "value": "24/7", "label": "Continuous monitoring and maintenance" },
+          { "value": "Minutes", "label": "From issue detection to production fix" },
+          { "value": "4+", "label": "Sites monitored and maintained" },
+          { "value": "Zero", "label": "Tasks falling through the cracks" }
+        ]
+      },
+      "tech": {
+        "title": "Tech Stack",
+        "items": ["Python", "Bash", "Claude AI", "Raspberry Pi", "Google Search Console API", "Telegram API", "Git", "Cron"]
+      }
+    },
+  "useCaseMortgageBot": {
+      "meta": {
+        "title": "AI WhatsApp Chatbot for Financial Consultation | Yaakov Aglamaz",
+        "description": "How we built a smart WhatsApp bot that conducts financial consultations in natural language, collects client data, and routes hot leads to advisors."
+      },
+      "title": "AI WhatsApp Chatbot for Financial Consultation",
+      "subtitle": "A bot that conducts consultations in natural language, qualifies leads, and passes only the relevant ones to the advisor",
+      "industry": "Financial Services",
+      "timeline": "4 weeks",
+      "challenge": {
+        "title": "The Challenge",
+        "text": "A financial advisor receives dozens of inquiries per week via WhatsApp. Each inquiry requires an initial 15-20 minute conversation to understand needs and collect basic data. Most inquiries aren't a fit, and the advisor wastes hours on screening instead of advising.",
+        "painPoints": [
+          "15-20 minutes per initial screening conversation",
+          "Most inquiries aren't relevant — wasting valuable time",
+          "Leads lost because the advisor isn't available 24/7",
+          "No organized tracking of inquiries and client data"
+        ]
+      },
+      "solution": {
+        "title": "The Solution",
+        "text": "We built a smart WhatsApp bot that conducts consultation conversations in natural language. The bot collects all required data, classifies the lead, and passes only hot leads to the advisor with all information ready.",
+        "features": [
+          {
+            "title": "Natural Language Conversation",
+            "description": "The bot conducts human-like conversations — asks contextual questions, doesn't repeat itself, and adapts its tone to the client."
+          },
+          {
+            "title": "Automatic Data Extraction",
+            "description": "AI extracts structured data from the conversation — loan type, property details, income, employment status — without forms."
+          },
+          {
+            "title": "Lead Classification & Routing",
+            "description": "The system classifies each lead (hot, call tomorrow, not interested) and alerts the advisor only when needed."
+          },
+          {
+            "title": "Management Dashboard",
+            "description": "Full dashboard with conversation history, lead data, filtering and search — everything in one place."
+          }
+        ]
+      },
+      "results": {
+        "title": "The Results",
+        "metrics": [
+          { "value": "Seconds", "label": "Lead response time — instead of hours" },
+          { "value": "24/7", "label": "Availability for new inquiries" },
+          { "value": "$0.36", "label": "Cost per full consultation" },
+          { "value": "100%", "label": "Tracking — no lead is lost" }
+        ]
+      },
+      "tech": {
+        "title": "Tech Stack",
+        "items": ["Next.js", "React", "MongoDB", "Claude AI", "WhatsApp Business API", "Vercel", "Firebase Auth"]
+      }
+    },
   "footer": {
     "tagline": "AI Automation for Small Business",
     "copyright": "© 2026 Yaakov Aglamaz | Built with care in Israel 🇮🇱"

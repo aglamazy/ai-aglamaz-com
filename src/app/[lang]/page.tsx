@@ -45,7 +45,7 @@ export default async function Home({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero dict={dict} lang={locale} />
-      <Projects dict={dict} />
+      <Projects dict={dict} lang={locale} />
       <Services dict={dict} />
       <About dict={dict} />
       <Process dict={dict} />

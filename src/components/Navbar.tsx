@@ -30,14 +30,14 @@ export function Navbar({ dict, lang }: { dict: Dictionary; lang: Locale }) {
 
   return (
     <nav className="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="w-full px-6 sm:px-10 lg:px-16">
         <div className="flex items-center justify-between h-16">
-          <Link href={`/${lang}`} className="text-lg font-bold text-teal-700">
+          <Link href={`/${lang}`} className="text-lg font-bold text-teal-700 shrink-0">
             Yaakov Aglamaz
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8 mx-auto">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -48,12 +48,22 @@ export function Navbar({ dict, lang }: { dict: Dictionary; lang: Locale }) {
                 {item.label}
               </a>
             ))}
+          </div>
+
+          <div className="hidden md:flex items-center gap-4 shrink-0">
             <Link
               href={`/${otherLang}`}
-              className="text-sm font-medium text-teal-700 border border-teal-700 rounded-md px-3 py-1 hover:bg-teal-50 transition-colors"
+              className="text-sm font-medium text-gray-500 hover:text-teal-700 transition-colors"
             >
               {otherLangLabel}
             </Link>
+            <a
+              href="#contact"
+              onClick={openWidget}
+              className="bg-teal-700 text-white text-sm font-medium px-5 py-2 rounded-lg hover:bg-teal-800 transition-colors"
+            >
+              {dict.hero.cta_primary}
+            </a>
           </div>
 
           {/* Mobile menu button */}

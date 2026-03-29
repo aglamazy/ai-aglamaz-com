@@ -5,8 +5,10 @@ import { useEffect } from "react";
 export function ChatWidget() {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://admin.aglamaz.com/widget.js";
-    script.dataset.api = "https://admin.aglamaz.com";
+    const isLocal = window.location.hostname === "localhost";
+    const apiBase = isLocal ? "http://localhost:3021" : "https://admin.aglamaz.com";
+    script.src = `${apiBase}/widget.js`;
+    script.dataset.api = apiBase;
     script.async = true;
     document.body.appendChild(script);
 
