@@ -48,26 +48,31 @@
   },
   "services": {
     "title": "What I Build",
+    "learnMore": "Learn more →",
     "items": [
       {
         "icon": "🔄",
         "title": "Business Process Automation",
-        "description": "Turn manual, repetitive tasks into automated workflows. Email → CRM, data entry, document processing."
+        "description": "Turn manual, repetitive tasks into automated workflows. Email → CRM, data entry, document processing.",
+        "link": "/services/business-automation"
       },
       {
         "icon": "🔌",
         "title": "API Integrations",
-        "description": "Connect your business systems: CRMs, payment providers, government APIs, third-party services."
+        "description": "Connect your business systems: CRMs, payment providers, government APIs, third-party services.",
+        "link": "/services/api-integrations"
       },
       {
         "icon": "💬",
         "title": "AI Agents & Chatbots",
-        "description": "Custom AI assistants for customer service, lead generation, or internal operations."
+        "description": "Custom AI assistants for customer service, lead generation, or internal operations.",
+        "link": "/services/ai-agents"
       },
       {
         "icon": "🚀",
         "title": "Legacy System Modernization",
-        "description": "Upgrade outdated tools with modern AI. Connect Excel sheets to real-time databases, automate Excel workflows."
+        "description": "Upgrade outdated tools with modern AI. Connect Excel sheets to real-time databases, automate Excel workflows.",
+        "link": "/services/legacy-modernization"
       }
     ]
   },
@@ -299,6 +304,127 @@
         "items": ["Next.js", "React", "MongoDB", "Claude AI", "WhatsApp Business API", "Vercel", "Firebase Auth"]
       }
     },
+  "servicePages": {
+    "backLink": "Back to Home",
+    "ctaTitle": "Ready to get started?",
+    "ctaText": "Let's talk about how this can work for your business.",
+    "ctaButton": "Let's Talk",
+    "whoIsItFor": "Who is it for",
+    "howItWorks": "How it works",
+    "examples": "Examples",
+    "relatedCases": "Related Projects",
+    "businessAutomation": {
+      "meta": {
+        "title": "Business Process Automation | Yaakov Aglamaz",
+        "description": "Turn manual processes into automated workflows. From email to CRM, document processing, data entry — anything repetitive can be automated."
+      },
+      "title": "Business Process Automation",
+      "subtitle": "If it's repetitive, it can be automated",
+      "description": "I build systems that take manual processes — data entry, document processing, coordination between systems — and make them fully automatic. Everything is custom-built for your needs.",
+      "audience": [
+        "Businesses with repetitive manual processes",
+        "Teams wasting hours transferring data between systems",
+        "Companies that want to grow without doubling headcount"
+      ],
+      "steps": [
+        { "title": "Map the process", "description": "Identify manual steps, bottlenecks, and failure points." },
+        { "title": "Build and test", "description": "Build the automation, connect to existing systems, and test with real data." },
+        { "title": "Launch and monitor", "description": "Deploy to production, monitor that everything works, and adjust as needed." }
+      ],
+      "exampleItems": [
+        "Incoming email → extract data → populate CRM",
+        "Supplier invoice → compliance check → auto-approval",
+        "Customer form → create case → send confirmation",
+        "Daily report → process → distribute to managers"
+      ],
+      "relatedLinks": [
+        { "title": "Document Processing Automation", "href": "/use-cases/document-automation" }
+      ]
+    },
+    "apiIntegrations": {
+      "meta": {
+        "title": "API Integrations | Yaakov Aglamaz",
+        "description": "Connect your business systems — government APIs, payment providers, CRMs, and third-party services. Expert in local and international integrations."
+      },
+      "title": "API Integrations",
+      "subtitle": "Connect your systems to the world",
+      "description": "Many business systems don't talk to each other. I specialize in building the bridges — connecting your tools to government systems, payment providers, CRMs, and third-party APIs.",
+      "audience": [
+        "Businesses that need to report to government agencies",
+        "Companies wanting to connect internal systems to external providers",
+        "Startups needing integration with local infrastructure"
+      ],
+      "steps": [
+        { "title": "Requirements analysis", "description": "Understand which systems need connecting and what formats are required." },
+        { "title": "Build the integration", "description": "Develop the connection, handle authentication, formats, and error handling." },
+        { "title": "Test and deploy", "description": "Test with real data, deploy to production, and ensure stability." }
+      ],
+      "exampleItems": [
+        "Connect to government and regulatory systems",
+        "Integrate with payment providers",
+        "Connect to ERP and management systems",
+        "Process multilingual forms and documents"
+      ],
+      "relatedLinks": [
+        { "title": "Document Processing Automation", "href": "/use-cases/document-automation" }
+      ]
+    },
+    "aiAgents": {
+      "meta": {
+        "title": "AI Agents & Chatbots for Business | Yaakov Aglamaz",
+        "description": "Custom bots and AI agents for your business — customer service, lead qualification, internal operations. WhatsApp, website, and more."
+      },
+      "title": "AI Agents & Chatbots",
+      "subtitle": "Digital assistants that work for you 24/7",
+      "description": "I build bots and AI agents that conduct natural language conversations, collect data, classify leads, and execute actions — all without human intervention.",
+      "audience": [
+        "Businesses receiving many inquiries wanting automatic filtering",
+        "Consultants and service providers wanting 24/7 availability",
+        "Companies wanting to improve customer service without growing the team"
+      ],
+      "steps": [
+        { "title": "Define the goal", "description": "Define what the bot needs to do — filtering, service, sales, or operations." },
+        { "title": "Build and train", "description": "Build the bot, define conversation flow, connect to channels (WhatsApp, website)." },
+        { "title": "Launch and improve", "description": "Go live, monitor performance, and improve based on real data." }
+      ],
+      "exampleItems": [
+        "WhatsApp bot for lead qualification and appointment scheduling",
+        "Website chat for customer service and FAQ",
+        "Internal AI agent for task and process management",
+        "AI assistant that monitors systems and reports findings"
+      ],
+      "relatedLinks": [
+        { "title": "AI WhatsApp Chatbot", "href": "/use-cases/ai-chatbot" },
+        { "title": "Personal AI Assistant", "href": "/use-cases/ai-assistant" }
+      ]
+    },
+    "legacyModernization": {
+      "meta": {
+        "title": "Legacy System Modernization with AI | Yaakov Aglamaz",
+        "description": "Upgrade outdated systems — Excel, Access, old software — with modern AI, real-time databases, and automation."
+      },
+      "title": "Legacy System Modernization",
+      "subtitle": "From Excel to AI — without throwing everything away",
+      "description": "Many businesses run on Excel spreadsheets, Access databases, or software from the 2000s. I build a bridge between old and new — keeping your knowledge and data while adding AI and automation.",
+      "audience": [
+        "Businesses running critical processes in Excel",
+        "Companies with old software they can't replace overnight",
+        "Organizations wanting to add AI to existing systems"
+      ],
+      "steps": [
+        { "title": "Map current state", "description": "Understand what works, what doesn't, and where AI can help most." },
+        { "title": "Build incrementally", "description": "Add a modern layer on top of the existing system — without breaking what works." },
+        { "title": "Controlled migration", "description": "Migrate processes gradually, verify everything works, and train the team." }
+      ],
+      "exampleItems": [
+        "Excel → database with UI and dashboards",
+        "Manual process → AI-powered automation",
+        "Old software → modern API with new interface",
+        "Closed system → integration with external tools"
+      ],
+      "relatedLinks": []
+    }
+  },
   "footer": {
     "tagline": "AI Automation for Small Business",
     "copyright": "© 2026 Yaakov Aglamaz | Built with care in Israel 🇮🇱"

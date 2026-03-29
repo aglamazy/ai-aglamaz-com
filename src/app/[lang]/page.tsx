@@ -46,7 +46,7 @@ export default async function Home({
       />
       <Hero dict={dict} lang={locale} />
       <Projects dict={dict} lang={locale} />
-      <Services dict={dict} />
+      <Services dict={dict} lang={locale} />
       <About dict={dict} />
       <Process dict={dict} />
       <Pricing dict={dict} />
