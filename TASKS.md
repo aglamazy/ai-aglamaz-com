@@ -15,25 +15,25 @@
 - [x] Anonymized Importa use case (regulatory compliance, no trace)
 
 ## TODO - Admin Panel
-- [ ] Fix admin layout CSS (import globals.css — already in code, needs reload test)
-- [ ] Test Google sign-in flow on localhost:3030/admin/login
-- [ ] Set up Vercel Blob store (dashboard → Storage → Create → Blob) to get BLOB_READ_WRITE_TOKEN
-- [ ] Add BLOB_READ_WRITE_TOKEN to Vercel env vars
-- [ ] Test content editing flow: login → edit section → save → verify on public page
-- [ ] Deploy admin to production and test on agents-head.com/admin
+- [x] Fix admin layout CSS (added Heebo font to admin layout.tsx)
+- [ ] Test Google sign-in flow on localhost:3030/admin/login *(manual)*
+- [ ] Set up Vercel Blob store (dashboard → Storage → Create → Blob) to get BLOB_READ_WRITE_TOKEN *(Vercel dashboard)*
+- [ ] Add BLOB_READ_WRITE_TOKEN to Vercel env vars *(Vercel dashboard)*
+- [ ] Test content editing flow: login → edit section → save → verify on public page *(manual)*
+- [ ] Deploy admin to production and test on agents-head.com/admin *(after above)*
 
-## TODO - Firebase
+## TODO - Firebase *(Firebase console)*
 - [ ] Verify Google sign-in is enabled in Firebase project yaakov-aglamaz-com (Authentication → Sign-in method → Google)
 - [ ] Add localhost:3030 to Firebase authorized domains (Authentication → Settings → Authorized domains)
 - [ ] Add agents-head.com to Firebase authorized domains
 
 ## TODO - SEO Pipe
-- [ ] Update Pi scout SITES config to include agents-head.com domain
-- [ ] Update maintenance agent to know about the new domain/repo mapping
-- [ ] Add agents-head.com to Google Search Console
-- [ ] Submit sitemap for agents-head.com
+- [x] Update Pi scout SITES config to include agents-head.com domain
+- [x] Update maintenance agent to know about the new domain/repo mapping (cicd/TODO.md)
+- [ ] Add agents-head.com to Google Search Console *(Google console)*
+- [ ] Submit sitemap for agents-head.com *(Google console)*
 
-## TODO - Content
+## TODO - Content *(waiting on Nadar)*
 - [ ] Add og:image to all pages (need branded social preview image from Nadar)
 - [ ] Update logo/brand name after Nadar finalizes octopus design
 

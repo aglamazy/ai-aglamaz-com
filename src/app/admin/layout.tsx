@@ -1,4 +1,10 @@
+import { Heebo } from "next/font/google";
 import "../globals.css";
+
+const heebo = Heebo({
+  variable: "--font-heebo",
+  subsets: ["latin"],
+});
 
 export const dynamic = "force-dynamic";
 
@@ -13,7 +19,7 @@ export default function AdminLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" dir="ltr" className="h-full antialiased">
+    <html lang="en" dir="ltr" className={`${heebo.variable} h-full antialiased`}>
       <body className="min-h-full font-sans">{children}</body>
     </html>
   );
