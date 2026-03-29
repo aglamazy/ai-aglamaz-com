@@ -26,10 +26,16 @@ export default async function Home({
     founder: {
       "@type": "Person",
       name: "Yaakov Aglamaz",
+      jobTitle: "Senior Full-Stack Developer & AI Automation Specialist",
     },
     areaServed: locale === "he" ? "IL" : "Worldwide",
-    serviceType: "AI Automation",
+    serviceType: ["AI Automation", "Business Process Automation", "AI Agents", "Chatbots", "API Integration"],
     inLanguage: locale === "he" ? "he" : "en",
+    knowsLanguage: ["he", "en"],
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "IL",
+    },
   };
 
   return (
