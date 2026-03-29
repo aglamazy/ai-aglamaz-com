@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ai.aglamaz.com/sitemap.xml",
+    sitemap: "https://agents-head.com/sitemap.xml",
   };
 }

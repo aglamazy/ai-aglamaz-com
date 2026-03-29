@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import Link from "next/link";
 
-const base = "https://ai.aglamaz.com";
+const base = "https://agents-head.com";
 
 export async function generateMetadata({
   params,

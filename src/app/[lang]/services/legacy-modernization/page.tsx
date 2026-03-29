@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import { ServicePageContent } from "@/components/ServicePage";
 
-const base = "https://ai.aglamaz.com";
+const base = "https://agents-head.com";
 const slug = "legacy-modernization";
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {

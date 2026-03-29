@@ -21,7 +21,7 @@ export default async function Home({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "Yaakov Aglamaz AI Automation",
-    url: `https://ai.aglamaz.com/${locale}`,
+    url: `https://agents-head.com/${locale}`,
     description: dict.meta.description,
     founder: {
       "@type": "Person",

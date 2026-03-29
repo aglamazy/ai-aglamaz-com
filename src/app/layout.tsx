@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ai.aglamaz.com"),
+  metadataBase: new URL("https://agents-head.com"),
   robots: {
     index: true,
     follow: true,

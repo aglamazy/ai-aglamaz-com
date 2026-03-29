@@ -8,7 +8,7 @@ export function Footer({ dict }: { dict: Dictionary }) {
           Yaakov Aglamaz
         </div>
         <div className="text-sm mb-6">{dict.footer.tagline}</div>
-        <div className="text-sm mb-4">ai.aglamaz.com</div>
+        <div className="text-sm mb-4">agents-head.com</div>
         <div className="flex items-center justify-center gap-6 mb-6">
           <a
             href="https://www.linkedin.com/in/aglamazy/"

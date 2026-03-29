@@ -23,7 +23,7 @@ export async function generateMetadata({
   const { lang } = await params;
   const locale = lang as Locale;
   const dict = await getDictionary(locale);
-  const base = "https://ai.aglamaz.com";
+  const base = "https://agents-head.com";
   const url = `${base}/${locale}`;
   return {
     title: dict.meta.title,
