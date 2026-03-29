@@ -1,17 +1,19 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { verifyAdmin } from "./firebase-admin";
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "changeme";
 const SESSION_COOKIE = "admin_session";
-const SESSION_TOKEN = process.env.ADMIN_SESSION_SECRET || "default-secret-change-me";
 
-export function verifyPassword(password: string): boolean {
-  return password === ADMIN_PASSWORD;
-}
+/**
+ * Create a session after successful Firebase login.
+ * Stores the Firebase ID token in an httpOnly cookie.
+ */
+export async function createSession(idToken: string) {
+  // Verify the token and check admin whitelist
+  await verifyAdmin(idToken);
 
-export async function createSession() {
   const cookieStore = await cookies();
-  cookieStore.set(SESSION_COOKIE, SESSION_TOKEN, {
+  cookieStore.set(SESSION_COOKIE, idToken, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
@@ -20,10 +22,20 @@ export async function createSession() {
   });
 }
 
+/**
+ * Check if the current request has a valid admin session.
+ */
 export async function isAuthenticated(): Promise<boolean> {
   const cookieStore = await cookies();
   const session = cookieStore.get(SESSION_COOKIE);
-  return session?.value === SESSION_TOKEN;
+  if (!session?.value) return false;
+
+  try {
+    await verifyAdmin(session.value);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 export async function requireAuth() {

@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Admin - ai.aglamaz.com",
   robots: { index: false, follow: false },

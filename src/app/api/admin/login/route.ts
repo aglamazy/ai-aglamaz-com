@@ -1,13 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyPassword, createSession } from "@/lib/auth";
+import { createSession } from "@/lib/auth";
 
 export async function POST(req: NextRequest) {
-  const { password } = await req.json();
+  try {
+    const { idToken } = await req.json();
 
-  if (!verifyPassword(password)) {
-    return NextResponse.json({ error: "Invalid password" }, { status: 401 });
+    if (!idToken) {
+      return NextResponse.json({ error: "Missing token" }, { status: 400 });
+    }
+
+    await createSession(idToken);
+    return NextResponse.json({ ok: true });
+  } catch (e: unknown) {
+    const msg = e instanceof Error ? e.message : "Auth failed";
+    return NextResponse.json({ error: msg }, { status: 401 });
   }
-
-  await createSession();
-  return NextResponse.json({ ok: true });
 }
