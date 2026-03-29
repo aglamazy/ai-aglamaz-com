@@ -12,10 +12,11 @@ export function proxy(request: NextRequest) {
 
   if (pathnameHasLocale) return NextResponse.next();
 
-  // Skip static files and API routes
+  // Skip static files, API routes, and admin
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
+    pathname.startsWith("/admin") ||
     pathname.includes(".")
   ) {
     return NextResponse.next();
